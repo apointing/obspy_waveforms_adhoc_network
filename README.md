@@ -10,6 +10,7 @@ obspy.org
 This script has been tested on Apple Mac.
 
 From a terminal command line, type:
+
 python plot_section_adhoc_network.py
 
 For example, if you have found an event that is picked up by a number of raspberry shakes, then 
