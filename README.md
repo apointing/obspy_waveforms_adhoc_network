@@ -1,4 +1,4 @@
-# obspy_waveforms_adhoc_network
+# plot_waveforms_from_adhoc_networks
 Use obspy to plot waveforms from stations downloaded from adhoc networks (including raspberry shakes)
 
 Use obspy to plot waveforms for stations downloaded from swarm or other adhoc networks and overlay 
@@ -19,8 +19,8 @@ waveforms from other adhoc networks e.g. in Europe the ORFEUS network, which all
 waveforms. Collect the waveforms into a directory.
 
 Then edit the python script and fill in the user data and parameters shown in the script. There is 
-example data filled in, in this script for an event in Norway. The example data is uploaded to the 
-repository here, download it and rename the path in the script.
+example data filled in for an event in Norway. The example data is uploaded to the 
+repository here if yuo want to test it, download it and rename the path in the script.
 
 There is an issue at the moment with the plotting routine that doesn't scale the HHZ channels for 
-stations, for some reason.
+some reason.
