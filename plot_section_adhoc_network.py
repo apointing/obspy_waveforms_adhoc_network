@@ -15,10 +15,12 @@ from obspy.clients.fdsn import Client
 from obspy.core import read
 from obspy.core.trace import Trace
 
+c = Client("ORFEUS")
+
 # User defined data and parameters
 # Specify the location of the mseed files
 path = '/Applications/swarm/obspy/station_location/data/'
-# Earthquakes' epicenter
+# Earthquakes epicenter
 p_onset = obspy.UTCDateTime("2017-04-29T22:58:50.4")
 eq_lat = 58.19
 eq_lon = 6.81
@@ -28,8 +30,6 @@ recl=240
 # Define the calculated travel times of phases - use ttall for all phases
 phases = ['P', 'S', 'PP']
 model='iasp91'
-
-c = Client("ORFEUS")
 
 class lat(object): pass
 class lon(object): pass
@@ -52,7 +52,7 @@ for filename in os.listdir(path):
         if filename.endswith(".DS_Store"):
            print("skipping")
         else:
-            st += read(path + filename, starttime=p_onset, endtime=p_onset + 240)
+            st += read(path + filename, starttime=p_onset, endtime=p_onset + recl)
     except Exception as e:
         raise e
         print "No files found here!"
