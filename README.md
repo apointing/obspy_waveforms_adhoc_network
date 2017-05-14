@@ -1,8 +1,9 @@
 # plot_waveforms_from_adhoc_networks
-Use obspy to plot waveforms from stations downloaded from adhoc networks (including raspberry shakes)
+Use obspy to plot waveforms from stations downloaded from adhoc networks, or download
 
-Use obspy to plot waveforms for stations downloaded from swarm or other adhoc networks and overlay 
-with calculated travel times.
+waveforms from Raspberry Shakes in Swarm. Waveforms are plotted and overlain with 
+ 
+calculated travel times.
 
 You need the obspy python package in order to execute this python script, you can download it from 
 obspy.org
