@@ -38,6 +38,9 @@ b=lon()
 
 # User defined location data
 # Define the a-lattude and b-longitude for those stations not in the FDSN network
+# You can find station locations for worldwide networks from the respective websites
+# You can find station location for Raspberry Shakes from the instrument response
+# files, downloaded from the StationView website. It is buried in the file.
 setattr(a, "DKMUD", 56.455)
 setattr(b, "DKMUD", 9.173)
 setattr(a, "AMRD4A6", 55.76)
